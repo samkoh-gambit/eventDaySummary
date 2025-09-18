@@ -156,8 +156,8 @@
 
         <section id="enabler" class="mb-20 scroll-mt-20">
             <div class="text-center mb-12">
-                <h3 class="text-3xl font-bold text-slate-800">2. The Technical Enabler: Meta Control Plane (MCP)</h3>
-                <p class="mt-2 text-slate-600 max-w-3xl mx-auto">For an AI to perform complex, real-world tasks, it needs to connect to external systems. The Meta Control Plane (MCP) is the protocol designed to be the standardized "plug and play" connector for AI agents.</p>
+                <h3 class="text-3xl font-bold text-slate-800">2. The Technical Enabler: Model Context Protocol (MCP)</h3>
+                <p class="mt-2 text-slate-600 max-w-3xl mx-auto">For an AI to perform complex, real-world tasks, it needs to connect to external systems. The Model Context Protocol (MCP) is the protocol designed to be the standardized "plug and play" connector for AI agents.</p>
             </div>
              <div class="section-card p-8">
                 <h4 class="font-bold text-xl mb-2 text-center text-slate-700">MCP: The "USBC Port for AI"</h4>
@@ -318,10 +318,9 @@
                         </button>
                         <div class="accordion-content">
                             <ul class="pt-4 pl-8 pr-4 space-y-3 list-disc text-slate-600">
-                                <li><strong>AI manage (V-code):</strong> An approach where a single prompt is used to generate an entire codebase.</li>
+                                <li><strong>AI manage (Vibe Coding):</strong> An approach where a single prompt is used to generate an entire codebase.</li>
                                 <li><strong>AI assisted (glorified autocomplete):</strong> An approach where AI handles small portions of code, such as developer documentation or test case generation.</li>
                                 <li><strong>Cursor:</strong> Described as a "previous generation of tools" or "fair programming tools". Used as an agent with terminal interaction for migration and on-call support.</li>
-                                <li><strong>Top Code:</strong> Mentioned as a coding agent, similar to Cursor, for developers.</li>
                                 <li><strong>LLM models (Large Language Models):</strong> The underlying technology for various agents and AI functionalities.</li>
                             </ul>
                         </div>
@@ -334,7 +333,7 @@
                         </button>
                         <div class="accordion-content">
                              <ul class="pt-4 pl-8 pr-4 space-y-3 list-disc text-slate-600">
-                                <li><strong>MCP (Meta Control Plane):</strong> A standardization layer for AI applications to communicate effectively with external services such as tools, databases, and predefined templates. It acts like a "USBC port" for AI applications.</li>
+                                <li><strong>MCP (Model Context Protocol):</strong> A standardization layer for AI applications to communicate effectively with external services such as tools, databases, and predefined templates. It acts like a "USBC port" for AI applications.</li>
                                 <li><strong>Auth SDK:</strong> An in-house Identity Provider (IDP) integrated with MCP to secure MCP servers.</li>
                                 <li><strong>Agent Core:</strong> A pattern that uses a vector database to manage numerous MCP servers, pulling in only relevant ones based on context.</li>
                             </ul>
@@ -377,7 +376,6 @@
                                 <li><strong>Unicorn Gym:</strong> An end-to-end AI-driven development experience event where customers build features using their "coding tool of choice".</li>
                                 <li><strong>Web search:</strong> A tool embedded into an agent to enable it to find recent news or events.</li>
                                 <li><strong>AWS CLI tool & kubectl:</strong> Command-line tools executed by agents for on-call support.</li>
-                                <li><strong>Hover:</strong> An in-house center for data discovery and table documentation, which aids in providing context for AI agents.</li>
                             </ul>
                         </div>
                     </div>
@@ -398,7 +396,7 @@
             
             const visionTabs = {
                 manage: {
-                    title: '&#128533; "AI Manage" (V-code)',
+                    title: '&#128533; "AI Manage" (Vibe Coding)',
                     content: "Asking AI to generate an entire system from one prompt. This often fails, leading to code developers don't understand and can't easily debug, frequently requiring complete rewrites."
                 },
                 assisted: {
